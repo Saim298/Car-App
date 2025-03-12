@@ -2,9 +2,6 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "./dist/server.js",
-   "engines": {
-    "node": "22.12.0"
-  },
   "scripts": {
     "dev": "nodemon src/server.ts",
     "build": "tsc",
@@ -43,6 +40,7 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/http-status": "^0.2.30",
+    "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/mysql": "^2.15.26",
     "@types/node": "^22.13.5",
