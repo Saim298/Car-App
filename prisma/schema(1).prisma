@@ -1,0 +1,268 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Vehicle {
+  vin                 String              @id
+  year                Int
+  make                String
+  model               String
+  trim                String
+  body_type           String
+  engine_type         String
+  transmission        String
+  drivetrain          String
+  fuel_type           String
+  cylinders           Int
+  horsepower          Int
+  torque              Int
+  displacement        Float
+  created_at          DateTime            @default(now())
+  updated_at          DateTime            @default(now()) @updatedAt
+  listings            Listing[]
+  market_metrics      MarketMetric[]
+  price_predictions   PricePrediction[]
+  vehicle_media       VehicleMedia[]
+  market_trends       MarketTrend[]
+  nhts_vehicles       NhtsVehicle[]
+  vehicle_market_nhts VehicleMarketNhts[]
+
+  @@index([make, model])
+}
+
+model Listing {
+  id                  String         @id
+  vin                 String
+  dealer_id           Int
+  price               Float
+  msrp                Float
+  miles               Int
+  condition           String
+  exterior_color      String
+  interior_color      String
+  listing_date        DateTime
+  source_url          String
+  first_seen_date     DateTime?
+  last_seen_date      DateTime?
+  status              String
+  certified_pre_owned Boolean
+  listing_title       String
+  description         String?
+  created_at          DateTime       @default(now())
+  updated_at          DateTime       @default(now()) @updatedAt
+  vehicle             Vehicle        @relation(fields: [vin], references: [vin])
+  dealer              Dealer         @relation(fields: [dealer_id], references: [id])
+  vehicle_media       VehicleMedia[]
+
+  @@index([price, listing_date])
+}
+
+model Dealer {
+  id               Int            @id
+  name             String
+  dealer_type      String
+  franchise_dealer Boolean
+  address          String
+  city             String
+  state            String
+  zip              String
+  latitude         Float
+  longitude        Float
+  phone            String
+  website          String
+  created_at       DateTime       @default(now())
+  updated_at       DateTime       @default(now()) @updatedAt
+  listings         Listing[]
+  dealer_metrics   DealerMetric[]
+
+  @@index([state, city])
+}
+
+model MarketMetric {
+  id                  String   @id
+  vin                 String
+  avg_market_price    Float
+  median_market_price Float
+  price_std_dev       Float
+  avg_miles           Int
+  days_on_market      Int
+  total_inventory     Int
+  similar_vehicles    Int
+  market_condition    String
+  price_trend         Float
+  supply_demand_ratio Float
+  region              String
+  measured_at         DateTime
+  created_at          DateTime @default(now())
+  vehicle             Vehicle  @relation(fields: [vin], references: [vin])
+
+  @@index([measured_at])
+}
+
+model PricePrediction {
+  id               String   @id
+  vin              String
+  predicted_price  Float
+  confidence_score Float
+  price_range_low  Float
+  price_range_high Float
+  similar_vehicles Int
+  market_condition String
+  prediction_date  DateTime
+  region           String
+  created_at       DateTime @default(now())
+  vehicle          Vehicle  @relation(fields: [vin], references: [vin])
+
+  @@index([prediction_date])
+}
+
+model VehicleMedia {
+  id              String   @id
+  listing_id      String
+  photo_url       String
+  photo_type      String?
+  sequence_number Int
+  created_at      DateTime @default(now())
+  listing         Listing  @relation(fields: [listing_id], references: [id])
+  vehicle         Vehicle? @relation(fields: [vehicleVin], references: [vin])
+  vehicleVin      String?
+}
+
+model MarketTrend {
+  id              String   @id
+  make            String
+  model           String
+  year            Int
+  date            DateTime
+  avg_price       Float
+  median_price    Float
+  inventory_count Int
+  days_to_sell    Int
+  price_trend     Float
+  created_at      DateTime @default(now())
+  vehicle         Vehicle? @relation(fields: [vehicleVin], references: [vin])
+  vehicleVin      String?
+}
+
+model DealerMetric {
+  id                    Int      @id
+  dealer_id             Int
+  inventory_count       Int
+  avg_days_on_lot       Int
+  sales_velocity        Float
+  price_competitiveness Float
+  market_share          Float
+  measured_at           DateTime
+  created_at            DateTime @default(now())
+  dealer                Dealer   @relation(fields: [dealer_id], references: [id])
+}
+
+model NhtsVehicle {
+  vin               String              @id
+  household_id      String
+  year              Int
+  make              String
+  model             String
+  body_type         String
+  annual_miles      Int
+  fuel_type         String
+  purchase_price    Float
+  purchase_type     String
+  purchase_date     DateTime
+  created_at        DateTime            @default(now())
+  updated_at        DateTime            @updatedAt
+  household         Household           @relation(fields: [household_id], references: [id])
+  vehicle           Vehicle?            @relation(fields: [vehicleVin], references: [vin])
+  vehicleVin        String?
+  TripData          TripData[]
+  FuelConsumption   FuelConsumption[]
+  MaintenanceRecord MaintenanceRecord[]
+  vehicleMarketNhts VehicleMarketNhts[]
+
+  @@index([make, model])
+}
+
+model Household {
+  id             String        @id
+  survey_year    Int
+  state_fips     String
+  msa_code       String
+  income_group   Int
+  vehicles_owned Int
+  household_size Int
+  urbanization   String
+  latitude       Float
+  longitude      Float
+  created_at     DateTime      @default(now())
+  updated_at     DateTime      @default(now()) @updatedAt
+  nhts_vehicles  NhtsVehicle[]
+  trip_data      TripData[]
+
+  @@index([state_fips, msa_code])
+}
+
+model TripData {
+  id                  String      @id
+  vehicle_vin         String
+  household_id        String
+  trip_date           DateTime
+  trip_miles          Float
+  trip_duration       Int
+  trip_purpose        String
+  start_location_type String
+  end_location_type   String
+  occupants           Int
+  time_of_day         String
+  day_of_week         String
+  created_at          DateTime    @default(now())
+  vehicle             NhtsVehicle @relation(fields: [vehicle_vin], references: [vin])
+  household           Household   @relation(fields: [household_id], references: [id])
+
+  @@index([trip_date])
+}
+
+model FuelConsumption {
+  id          String      @id
+  vehicle_vin String
+  gallons     Float
+  cost        Float
+  fill_date   DateTime
+  odometer    Int
+  fuel_type   String
+  location    String
+  created_at  DateTime    @default(now())
+  vehicle     NhtsVehicle @relation(fields: [vehicle_vin], references: [vin])
+
+  @@index([fill_date])
+}
+
+model MaintenanceRecord {
+  id           String      @id
+  vehicle_vin  String
+  service_type String
+  cost         Float
+  service_date DateTime
+  odometer     Int
+  provider     String
+  location     String
+  created_at   DateTime    @default(now())
+  vehicle      NhtsVehicle @relation(fields: [vehicle_vin], references: [vin])
+
+  @@index([service_date])
+}
+
+model VehicleMarketNhts {
+  vehicle_vin      String
+  nhts_vehicle_vin String
+  created_at       DateTime    @default(now())
+  vehicle          Vehicle     @relation(fields: [vehicle_vin], references: [vin])
+  nhts_vehicle     NhtsVehicle @relation(fields: [nhts_vehicle_vin], references: [vin])
+
+  @@id([vehicle_vin, nhts_vehicle_vin])
+}

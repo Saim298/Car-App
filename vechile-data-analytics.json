@@ -1,0 +1,506 @@
+[
+  {
+    "vin": "1HGCM82633A123456",
+    "year": 2003,
+    "make": "Honda",
+    "model": "Accord",
+    "trim": "EX",
+    "specifications": {
+      "body_style": "Coupe",
+      "vehicle_type": "",
+      "doors": 2,
+      "seating_capacity": 0,
+      "engine": {
+        "type": "3L V6",
+        "size": 3,
+        "cylinders": 6,
+        "fuel_type": "Unleaded",
+        "horsepower": "",
+        "torque": ""
+      },
+      "transmission": { "type": "Automatic", "speeds": 0 },
+      "drivetrain": "FWD",
+      "fuel_economy": {
+        "city": 0,
+        "highway": 0,
+        "combined": 0,
+        "fuel_tank_capacity": 0
+      },
+      "dimensions": {
+        "wheelbase": 0,
+        "length": 0,
+        "width": 0,
+        "height": 0,
+        "curb_weight": 0,
+        "gross_weight": 0
+      },
+      "colors": { "exterior": "", "interior": "" },
+      "plant": "",
+      "manufacturer": "",
+      "series": ""
+    },
+    "safety": {
+      "ratings": {
+        "overall": "",
+        "front_crash": "",
+        "side_crash": "",
+        "rollover": "",
+        "side_pole_crash": ""
+      },
+      "recalls": [
+        {
+          "Manufacturer": "Honda (American Honda Motor Co.)",
+          "NHTSACampaignNumber": "16V061000",
+          "parkIt": false,
+          "parkOutSide": false,
+          "overTheAirUpdate": false,
+          "NHTSAActionNumber": "EA15001",
+          "ReportReceivedDate": "03/02/2016",
+          "Component": "AIR BAGS:FRONTAL:DRIVER SIDE:INFLATOR MODULE",
+          "Summary": "Honda (American Honda Motor Co.) is recalling certain model year 2007-2011 Honda CR-V, 2011-2015 CR-Z, 2010-2014 FCX, and Insight, 2009-2013 Fit, 2013-2014 Fit EV, 2007-2014 Ridgeline, 2013-2016 Acura ILX, 2013-2014 Acura ILX Hybrid, 2007-2016 RDX, 2005-2012 Acura RL, 2009-2014 Acura TL, and 2010-2013 Acura ZDX vehicles.  The affected vehicles are equipped with a dual-stage driver frontal air bag that may be susceptible to moisture intrusion which, over time, could cause the inflator to rupture.",
+          "Consequence": "In the event of a crash necessitating deployment of the driver's frontal air bag, the inflator could rupture with metal fragments striking the driver or other occupants resulting in serious injury or death.",
+          "Remedy": "Honda will notify owners, and dealers will replace the inflator, free of charge. The recall began March 2017.  Owners may contact Honda customer service at 1-888-234-2138.  Honda's numbers for this recall are JY0, JY1, and JY2.",
+          "Notes": "Owners may also contact the National Highway Traffic Safety Administration Vehicle Safety Hotline at 1-888-327-4236 (TTY 1-800-424-9153), or go to www.safercar.gov.",
+          "ModelYear": "2012",
+          "Make": "ACURA",
+          "Model": "RDX"
+        }
+      ],
+      "complaints": [
+        {
+          "odiNumber": 11132058,
+          "manufacturer": "Honda (American Honda Motor Co.)",
+          "crash": false,
+          "fire": false,
+          "numberOfInjuries": 0,
+          "numberOfDeaths": 0,
+          "dateOfIncident": "08/01/2014",
+          "dateComplaintFiled": "09/28/2018",
+          "vin": "5J8TB2H27CA",
+          "components": "EXTERIOR LIGHTING",
+          "summary": "AMBOS FOCOS DELANTEROS SE OBEDECEN, LAS FECHAS EXACTAS CUANDO LO LLEV AL DEALER PARA GARANTA DE LOS FOCOS NO LA RECUERDO, PERO FUI EN VARIAS OCASIONES.  ME INFORMARON QUE LA ESPECIFICACIN DEL FABRICANTE ERAN FOCOS AL AIRE, Y QUE POR ESO SE HUMEDECIAN Y NO TENAN GARANTA, QUE TODOS LOS DE ESE AO VINIERON AS.  ME CONFIRM Y NO REGRES PARA ESE PROBLEMA., AUNQUE NO TIENE LGICA,  SE COMPRA UN AUTO PARA QUE FUNCIONE TODO NORMAL Y ESTE NO ES EL CASO DE AMBOS FOCOS.  AL PASAR EL TIEMPO EL PROBLEMA SE HA AGRAVADO PORQUE SE HUMEDECEN MAS Y AFECTA LA VISIBILIDAD.   LLAM NUEVAMENTE AL DEALER PERO ME INFORMARON LO MISMO, LES INFORM QUE FUI EN EL PERIODO DE DE GARANTA Y NO LOS REEMPLAZARON Y AHORA ES PEOR Y QUE NI ES CIERTO QUE TODOS LOS DE MI AO ESTN AS PORQUE LOS QUE HE VISTO QUE ESTN BIEN.  AGRADECER PUEDAN V VERIFICAR MI SOLICITUD EN EL DEALER Y RESOLVER EL INCONVENIENTE.  GRACIAS",
+          "products": [
+            {
+              "type": "Vehicle",
+              "productYear": "2012",
+              "productMake": "ACURA",
+              "productModel": "RDX",
+              "manufacturer": "Honda (American Honda Motor Co.)"
+            }
+          ]
+        }
+      ]
+    },
+    "listing": {
+      "id": "9a7dfeaf-04f0-45de-a401-ae099b75e1e7",
+      "price": 10000,
+      "miles": 0,
+      "days_on_market": 0,
+      "seller_type": "",
+      "inventory_type": "",
+      "is_certified": false,
+      "is_clean_title": false,
+      "has_accidents": false,
+      "last_seen_date": "",
+      "source": "",
+      "vdp_url": "",
+      "media": {
+        "photos": [
+          "https://dryveforless.com/static/648f8a4694db60cf01dd075d261bb7ed/45a0e/placeholder.png"
+        ],
+        "videos": []
+      }
+    },
+    "analysis": {
+      "markup_analysis": {
+        "estimated_invoice": 9870,
+        "markup_percentage": 1.3,
+        "markup_dollars": 130,
+        "negotiation_margin": -0.7,
+        "profit_centers": {
+          "vehicle_markup": 130,
+          "financing_potential": 300,
+          "add_on_potential": 500,
+          "trade_in_potential": 800
+        },
+        "power_zone": { "min": 10067, "target": 10265, "max": 10462 }
+      },
+      "market_position": {
+        "price_comparison": "at_market",
+        "days_on_market_comparison": "below_average",
+        "price_delta_from_average": 0,
+        "price_percentile": 50
+      },
+      "market_timing": {
+        "timing_advantage_score": 50,
+        "market_timing": {
+          "month_position": "middle",
+          "quarter_position": "middle",
+          "model_year_timing": "mid_cycle",
+          "day_of_week": "busy"
+        },
+        "best_time_to_buy": "in 22 days (end of quarter)",
+        "urgency_level": "low",
+        "recommendation": "Waiting until in 22 days (end of quarter) will give you better leverage, if possible."
+      },
+      "negotiation_intelligence": {
+        "power_moves": [
+          {
+            "name": "competing_offer",
+            "script": "I've been offered a similar vehicle at [DEALER_NAME] for [COMPETING_PRICE], but I'd prefer to purchase from you if we can reach an agreement."
+          }
+        ],
+        "walk_away_threshold": 9969,
+        "anchoring_strategy": {
+          "initial_offer": 9000,
+          "justification": "market research",
+          "fallback_positions": [
+            { "price": 9500, "justification": "negotiation_step" },
+            { "price": 10000, "justification": "negotiation_step" },
+            { "price": 10500, "justification": "final_offer" }
+          ]
+        },
+        "objection_handling": {
+          "we_cant_go_that_low": "I understand you need to make a profit, but based on my research the invoice price is around $9870, so my offer of $9000 still provides a reasonable profit margin.",
+          "manager_wont_approve": "I appreciate your position, but I've done extensive research on this model and market. Perhaps we could speak directly with your manager to explain my rationale?",
+          "price_already_discounted": "I see that, but when I compare to the current market, there's still room to make this a fair deal for both of us.",
+          "what_monthly_payment": "I prefer to discuss the total price rather than monthly payments, as that gives us both clarity on the actual deal value."
+        }
+      },
+      "dealer_psychology": {
+        "motivation_level": "low",
+        "inventory_pressure": "low",
+        "sales_target_pressure": "moderate",
+        "psychological_leverage_points": [
+          "general_availability",
+          "standard_negotiation"
+        ]
+      },
+      "cross_shopping": {
+        "alternative_vehicles": [],
+        "cross_brand_alternatives": [
+          {
+            "year": 2025,
+            "make": "toyota",
+            "model": " competitor",
+            "price": 9700,
+            "savings": 300,
+            "value_score": 80
+          },
+          {
+            "year": 2025,
+            "make": "honda",
+            "model": " competitor",
+            "price": 9700,
+            "savings": 300,
+            "value_score": 80
+          },
+          {
+            "year": 2025,
+            "make": "ford",
+            "model": " competitor",
+            "price": 9700,
+            "savings": 300,
+            "value_score": 80
+          }
+        ],
+        "value_comparison": {
+          "better_value_options": [],
+          "feature_comparison": {
+            "pricing": { "base_price": 10000, "alternatives_avg": 9600 },
+            "performance": {
+              "horsepower": "Similar across alternatives",
+              "fuel_economy": "2-3 MPG better in some alternatives"
+            },
+            "features": {
+              "key_advantages": ["Feature 1", "Feature 2"],
+              "key_disadvantages": [
+                "Missing Feature 1",
+                "Higher cost for Feature 2"
+              ]
+            }
+          }
+        }
+      },
+      "financial_intelligence": {
+        "total_cost_of_ownership": {
+          "three_year": 15709,
+          "five_year": 25313,
+          "components": {
+            "depreciation": { "three_year": 3859, "five_year": 5563 },
+            "maintenance": { "three_year": 3600, "five_year": 6000 },
+            "insurance": { "three_year": 2850, "five_year": 4750 },
+            "fuel": { "three_year": 5400, "five_year": 9000 }
+          }
+        },
+        "financing_options": [
+          {
+            "term": 36,
+            "apr": 3.9,
+            "monthly_payment": 295,
+            "total_interest": 620,
+            "recommendation": "Lowest total cost"
+          },
+          {
+            "term": 48,
+            "apr": 4.2,
+            "monthly_payment": 227,
+            "total_interest": 896,
+            "recommendation": "Balanced option"
+          },
+          {
+            "term": 60,
+            "apr": 4.5,
+            "monthly_payment": 186,
+            "total_interest": 1160,
+            "recommendation": "Lowest monthly payment"
+          }
+        ],
+        "monthly_payment_impact": {
+          "base_payment": 227,
+          "insurance_impact": 79,
+          "total_monthly_cost": 306
+        },
+        "ownership_costs": {
+          "annual_maintenance": 1200,
+          "annual_insurance": 950,
+          "annual_fuel": 1800,
+          "annual_total": 3950
+        }
+      },
+      "value_factors": {
+        "condition_impact": 0,
+        "mileage_impact": 300,
+        "history_impact": -1500,
+        "total_value_adjustment": -1200
+      },
+      "safety_summary": {
+        "recall_severity": "none",
+        "complaint_severity": "none",
+        "safety_rating_summary": "unknown",
+        "critical_issues": []
+      },
+      "historical_price_trends": {
+        "price_history": [],
+        "seasonal_trends": [
+          { "month": "January", "trend": -2.1, "note": "Post-holiday deals" },
+          { "month": "February", "trend": -0.5, "note": "Stable prices" },
+          {
+            "month": "March",
+            "trend": 0.8,
+            "note": "Spring buying season beginning"
+          },
+          { "month": "April", "trend": 1.5, "note": "Tax refund season" },
+          { "month": "May", "trend": 0.7, "note": "Spring buying continues" },
+          { "month": "June", "trend": 0.2, "note": "Early summer plateau" },
+          { "month": "July", "trend": -0.3, "note": "Mid-summer slowdown" },
+          {
+            "month": "August",
+            "trend": -1.2,
+            "note": "Model year transitions begin"
+          },
+          {
+            "month": "September",
+            "trend": -2.5,
+            "note": "Model year clearance"
+          },
+          {
+            "month": "October",
+            "trend": -1.8,
+            "note": "Fall buying opportunities"
+          },
+          {
+            "month": "November",
+            "trend": 0.3,
+            "note": "Holiday season beginning"
+          },
+          { "month": "December", "trend": 1.2, "note": "Year-end sales events" }
+        ],
+        "trend_direction": "stable",
+        "predicted_change_30d": 0,
+        "predicted_change_90d": 0
+      },
+      "geographic_price_variations": {
+        "local_comparison": { "difference": -200, "percentile": 14 },
+        "regional_comparison": { "difference": 200, "percentile": 31 },
+        "national_comparison": { "difference": 500, "percentile": 74 },
+        "best_deal_locations": [
+          {
+            "city": "Springfield",
+            "state": "IL",
+            "price": 9200,
+            "savings": 800,
+            "distance": 120
+          },
+          {
+            "city": "Riverside",
+            "state": "CA",
+            "price": 9300,
+            "savings": 700,
+            "distance": 185
+          },
+          {
+            "city": "Austin",
+            "state": "TX",
+            "price": 9400,
+            "savings": 600,
+            "distance": 230
+          }
+        ]
+      },
+      "dealer_reputation": {
+        "rating": 0,
+        "review_count": 0,
+        "sentiment_analysis": {},
+        "negotiation_flexibility": "unknown",
+        "reputation_leverage": []
+      },
+      "inventory_alerts": {
+        "alerts": [],
+        "inventory_changes": {
+          "new_listings_7d": 6,
+          "price_drops_7d": 1,
+          "avg_price_change": -249
+        },
+        "opportunity_score": 50
+      },
+      "dealer_incentives": {
+        "estimated_incentives": [
+          {
+            "type": "volume_bonus",
+            "amount": 200,
+            "description": "Potential volume-based dealer incentive from manufacturer",
+            "confidence": "medium"
+          }
+        ],
+        "total_incentive_value": 200,
+        "negotiation_tactics": [
+          {
+            "name": "incentive_knowledge",
+            "script": "I'm aware that  is offering dealer incentives on 2025 s right now. That gives you additional flexibility beyond what the window sticker shows."
+          },
+          {
+            "name": "volume_goals",
+            "script": "I understand that hitting your monthly sales targets is important, and manufacturers reward that. I'd like a deal that helps us both."
+          }
+        ]
+      },
+      "add_on_calculator": {
+        "detected_add_ons": [
+          {
+            "name": "Extended Warranty",
+            "dealer_price": 1995,
+            "fair_value": 1100,
+            "negotiation_target": 1200,
+            "value_rating": "poor",
+            "alternatives": "Third-party warranties, manufacturer extensions",
+            "negotiation_script": "I've researched extended warranties and would consider one at $1,200, which still provides good profit margin."
+          },
+          {
+            "name": "Paint Protection",
+            "dealer_price": 895,
+            "fair_value": 300,
+            "negotiation_target": 400,
+            "value_rating": "very_poor",
+            "alternatives": "Aftermarket ceramic coating, DIY protection",
+            "negotiation_script": "The paint protection package is significantly overpriced at $895. I'd consider it at $400 maximum."
+          },
+          {
+            "name": "GAP Insurance",
+            "dealer_price": 795,
+            "fair_value": 350,
+            "negotiation_target": 400,
+            "value_rating": "poor",
+            "alternatives": "Insurance company GAP coverage, credit union GAP",
+            "negotiation_script": "My research shows the fair market rate for GAP is around $350-400. I'd need to see that pricing to consider it."
+          }
+        ],
+        "common_add_ons": [
+          {
+            "name": "Extended Warranty",
+            "dealer_price": 1995,
+            "fair_value": 1100,
+            "negotiation_target": 1200,
+            "value_rating": "poor",
+            "alternatives": "Third-party warranties, manufacturer extensions",
+            "negotiation_script": "I've researched extended warranties and would consider one at $1,200, which still provides good profit margin."
+          },
+          {
+            "name": "Paint Protection",
+            "dealer_price": 895,
+            "fair_value": 300,
+            "negotiation_target": 400,
+            "value_rating": "very_poor",
+            "alternatives": "Aftermarket ceramic coating, DIY protection",
+            "negotiation_script": "The paint protection package is significantly overpriced at $895. I'd consider it at $400 maximum."
+          },
+          {
+            "name": "GAP Insurance",
+            "dealer_price": 795,
+            "fair_value": 350,
+            "negotiation_target": 400,
+            "value_rating": "poor",
+            "alternatives": "Insurance company GAP coverage, credit union GAP",
+            "negotiation_script": "My research shows the fair market rate for GAP is around $350-400. I'd need to see that pricing to consider it."
+          },
+          {
+            "name": "Nitrogen Tire Fill",
+            "dealer_price": 195,
+            "fair_value": 0,
+            "negotiation_target": 0,
+            "value_rating": "worthless",
+            "alternatives": "Regular air (78% nitrogen naturally)",
+            "negotiation_script": "This add-on provides virtually no benefit and should be removed entirely."
+          },
+          {
+            "name": "Window Tinting",
+            "dealer_price": 595,
+            "fair_value": 250,
+            "negotiation_target": 300,
+            "value_rating": "poor",
+            "alternatives": "Local tint shops, mobile tinting services",
+            "negotiation_script": "Window tinting from specialty shops costs $250-300 with lifetime warranties. I'd need similar pricing."
+          },
+          {
+            "name": "Wheel Locks",
+            "dealer_price": 129,
+            "fair_value": 50,
+            "negotiation_target": 60,
+            "value_rating": "poor",
+            "alternatives": "Auto parts store locks, online retailers",
+            "negotiation_script": "These exact locks retail for $50. I'd pay $60 for your installation."
+          },
+          {
+            "name": "Fabric Protection",
+            "dealer_price": 395,
+            "fair_value": 0,
+            "negotiation_target": 0,
+            "value_rating": "worthless",
+            "alternatives": "DIY fabric protector ($10-20)",
+            "negotiation_script": "This coating has no demonstrable value beyond DIY solutions. I'd need this removed from the deal."
+          }
+        ],
+        "analysis": {
+          "total_dealer_price": 3685,
+          "total_fair_value": 1750,
+          "markup_percentage": 111,
+          "negotiation_opportunity": 1935
+        },
+        "negotiation_strategy": {
+          "primary_approach": "Remove all low-value add-ons, negotiate fair pricing on others",
+          "scripts": [
+            "I'd like to review each add-on individually rather than bundled in the price",
+            "Let's remove these three add-ons that don't provide real value",
+            "For the remaining add-ons, I've researched fair market pricing"
+          ]
+        }
+      }
+    },
+    "metadata": {
+      "created_at": "2025-03-08T19:13:02.284Z",
+      "updated_at": "2025-03-08T19:13:02.284Z",
+      "data_sources": ["marketcheck", "nhtsa"],
+      "data_quality": 24
+    }
+  }
+]
